@@ -1,0 +1,73 @@
+header {
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.header__container {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+/*=== Inicio de: Estilos Curriculum ===*/
+.curriculum__container {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+/*=== Inicio de: Estilos de Header Sociales ===*/
+.header__social-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  bottom: 3rem;
+  left: 0;
+  position: absolute;
+}
+
+.header__social-content::after {
+  content: '';
+  height: 3rem;
+  width: 1px;
+  background-color: var(--color-primary);
+}
+
+/*=== Inicio de: Estilos de Imagen header ===*/
+
+.header__img {
+  width: 22rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  border-radius: 10rem 10rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 100%;
+  /* box-shadow: 1px 1px 3px var(--color-primary); */
+}
+
+.header__img img {
+  /* filter: drop-shadow(5px 5px 5px hsl(0deg 100% 100% / 0.5)); */
+  filter: drop-shadow(2px 3px 15px var(--color-primary));
+}
+
+/*=== Inicio de: estilos de btn scroll down ===*/
+.header__scroll-down {
+  bottom: 6.5rem;
+  font-weight: 300;
+  font-size: 0.89rem;
+  position: absolute;
+  right: -1rem;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 48rem) {
+}
+@media screen and (max-width: 62rem) {
+}

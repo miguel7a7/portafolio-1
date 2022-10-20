@@ -1,5 +1,27 @@
-import React from "react"
+import React from 'react'
+
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
+import { BiBook, BiMessageDetail } from 'react-icons/bi'
+import { RiServiceLine } from 'react-icons/ri'
 
 export const Navbar = () => {
-  return <div>Navba</div>
+  return (
+    <nav>
+      <a href="#">
+        <AiOutlineHome />
+      </a>
+      <a href="#about">
+        <AiOutlineUser />
+      </a>
+      <a href="#experience">
+        <BiBook />
+      </a>
+      <a href="#services">
+        <RiServiceLine />
+      </a>
+      <a href="#contact">
+        <BiMessageDetail />
+      </a>
+    </nav>
+  )
 }
