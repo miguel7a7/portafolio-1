@@ -1,5 +1,5 @@
-import React from "react"
+import React from 'react'
 
 export const Portafolio = () => {
-  return <div>Portafolio</div>
+  return <section id="portafolio">Portafolio</section>
 }

@@ -278,3 +278,8 @@ section > h2 {
   max-width: 1000px;
   width: 90%;
 }
+
+section {
+  margin-top: 8rem;
+  min-height: 100vh;
+}
