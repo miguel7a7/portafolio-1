@@ -1,0 +1,116 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+}
+
+.about__img {
+  margin: 2rem 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__img-content {
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  overflow: hidden;
+  transform: rotate(10deg);
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about__img-content:hover {
+  transform: rotate(0);
+}
+
+.about__img-content img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*=== Inicio de: Estilos cards ===*/
+.about__content {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.about__card {
+  background-color: var(--color-fondo-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.about__card:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.about__icon-card {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-ligth);
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-ligth);
+  text-align: start;
+}
+
+@media screen and (min-width: 48rem) {
+  .about__container {
+    grid-template-columns: 70%;
+    gap: 5%;
+  }
+
+  .about__img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .about__container {
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

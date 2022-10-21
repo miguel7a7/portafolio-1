@@ -280,6 +280,10 @@ section > h2 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 5rem;
   min-height: 100vh;
+}
+
+.container {
+  margin: 2rem 0;
 }
