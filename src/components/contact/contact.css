@@ -1,0 +1,75 @@
+.contact__options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.contact__option {
+  background-color: var(--color-fondo-variant);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease-in, border 0.3s ease-in;
+}
+
+.contact__option:hover {
+  border: 1px solid var(--color-light);
+  background-color: transparent;
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+/* Estilos formulario */
+.contact__form {
+  margin-top: 2rem;
+}
+
+.form-control input,
+.form-control textarea {
+  color: var(--color-light);
+}
+
+.form-control textarea {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .contact__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact__container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .contact__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .contact__option h4 {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .contact__option h5 {
+    font-size: 0.7rem;
+  }
+}
